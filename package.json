@@ -1,0 +1,40 @@
+{
+  "name": "teams-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that posts messages to a Microsoft Teams channel via an Incoming Webhook (or Power Automate Workflow webhook)",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "teams-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "teams",
+    "microsoft-teams",
+    "webhook",
+    "adaptive-card"
+  ],
+  "license": "MIT"
+}
