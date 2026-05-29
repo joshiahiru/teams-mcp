@@ -31,6 +31,8 @@ const ALLOWED_HOST_SUFFIXES = [
   "outlook.office365.com",
   ".logic.azure.com",
   ".logic.azure.us",
+  ".powerplatform.com",
+  "powerplatform.com",
 ];
 
 interface SendArgs {
@@ -238,7 +240,7 @@ class TeamsMCP {
                 type: "string",
                 description:
                   "Optional override of the Teams webhook URL. If omitted, the TEAMS_WEBHOOK_URL environment variable is used. " +
-                  "Must be https and on a Microsoft host (*.webhook.office.com, outlook.office.com, *.logic.azure.com, *.logic.azure.us).",
+                  "Must be https and on a Microsoft host (*.webhook.office.com, outlook.office.com, *.logic.azure.com, *.logic.azure.us, *.powerplatform.com).",
               },
             },
             required: ["text"],

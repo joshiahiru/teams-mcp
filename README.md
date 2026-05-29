@@ -55,7 +55,7 @@ Post an Adaptive Card to the channel bound to the webhook URL.
 Arguments:
 - `text` (string, required) — message body. Max 28000 chars.
 - `title` (string, optional) — bold title rendered above the message. Max 200 chars.
-- `webhook_url` (string, optional) — override the default webhook from `TEAMS_WEBHOOK_URL`. Must be `https://` and on a recognized Microsoft host (`*.webhook.office.com`, `outlook.office.com`, `*.logic.azure.com`, `*.logic.azure.us`).
+- `webhook_url` (string, optional) — override the default webhook from `TEAMS_WEBHOOK_URL`. Must be `https://` and on a recognized Microsoft host (`*.webhook.office.com`, `outlook.office.com`, `*.logic.azure.com`, `*.logic.azure.us`, `*.powerplatform.com`).
 
 ### `get_configuration_status`
 
